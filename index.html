@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <title>Query HTML</title>
+</head>
+<body>
+    <div class="nav">
+        <input id="qurey" type="text" placeholder="Enter Qurey">
+    </div>
+    <div class="content">
+        <div class="html">
+            <textarea name="html" id="html" placeholder="Enter Html"></textarea>
+        </div>
+        <div class="output">
+            <button id="copy">Copy</button>
+            <button id="text">Text</button>
+            <button id="node">Node</button>
+            <textarea name="output" id="output" placeholder="output" readonly></textarea>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify.min.js"></script>
+<script src="script.js"></script>
+</html>
