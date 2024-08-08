@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.CodeMirror { /* for codeMirror libarary */
+    position: relative;
+    color: #000000 !important;
+    height: calc(100vh - 109px) !important;
+    outline: none !important;
+    border: 1px solid black;
+    width: calc(50vw - 40px) !important;
+    margin: 0 20px 20px 20px !important;
+    font-size: 17px !important;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+body div.content{
+    display: flex;
+    flex-direction: row;
+}
+
+body div.nav input{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    width: calc(100vw - 40px);
+    margin: 20px 20px 0 20px;
+}
+
+.nav input:focus{
+    border: 1px solid rgb(23, 139, 67);
+}
+
+.content textarea{
+    height: calc(100vh - 109px);
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    width: calc(50vw - 30px);
+    margin: 0 20px 20px 20px;
+    font-size: 17px;
+}
+
+.content textarea:focus{
+    border: 1px solid rgb(23, 139, 67);
+}
+
+.content button{
+    outline: none;
+    background-color: rgb(23, 139, 67);
+    color: white;
+    border: none;
+    border-radius: 0 10px 0 10px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.content button:hover{
+    cursor: pointer;
+    background-color: rgb(32, 155, 79);
+}
+
+#html{
+    margin-right: 10px;
+}
+
+#output{
+    margin-left: 10px;
+    height: calc(100vh - 145px);
+}
